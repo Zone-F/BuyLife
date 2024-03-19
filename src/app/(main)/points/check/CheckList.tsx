@@ -1,11 +1,4 @@
-"use client"
-import { useState } from "react";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import Checkbox from "@mui/material/Checkbox";
-import { Typography } from "@mui/material";
+"use client";
 
 export default function CheckList() {
   const [checked, setChecked] = useState([1]);
@@ -39,7 +32,7 @@ export default function CheckList() {
                 onClick={(event) => event.stopPropagation()}
                 onChange={() => handleToggle(value)}
                 checked={checked.indexOf(value) !== -1}
-                inputProps={{ 'aria-labelledby': labelId }}
+                inputProps={{ "aria-labelledby": labelId }}
               />
             }
             disablePadding

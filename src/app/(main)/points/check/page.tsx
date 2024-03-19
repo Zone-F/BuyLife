@@ -1,6 +1,5 @@
 "use client";
 // pages/points/check-in.tsx
-import React from "react";
 import CheckList from "./CheckList";
 import AddCheck from "./AddCheck";
 
@@ -9,7 +8,9 @@ function CheckInPage() {
   return (
     <div className="p-6">
       <AddCheck />
-      <CheckList />
+      <section className="mt-4">
+        <CheckList />
+      </section>
     </div>
   );
 }

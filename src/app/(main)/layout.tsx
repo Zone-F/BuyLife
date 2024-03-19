@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import style from "./layout.module.scss";
+import { BottomNav } from "./components/BottomNav";
 
 const MainLayout = ({
   children,
@@ -16,7 +18,10 @@ const MainLayout = ({
         </div>
       </nav>
       <main className={`m-auto max-w-main p-10 h-screen`}>
-        <div className={style.container}>{children}</div>
+        <div className={style.container}>
+          {children}
+          <BottomNav />
+        </div>
       </main>
     </div>
   );
